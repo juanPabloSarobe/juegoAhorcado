@@ -152,6 +152,13 @@ main{
     width: 300px;
     height: 50px;
     background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.resultado{
+    margin: 0 10px;
 }
 
 .seccionLetras{

@@ -6,6 +6,7 @@ const pantallaPrincipal = document.getElementById('pantallaPrincipal')
 const tituloInputPalabra = document.getElementById('tituloInputPalabra')
 
 let palabra
+let arrPalabra = []
 
 function ocultar(elemento) {
     elemento.classList.remove('animate__bounceInUp','animate__delay-2s')
@@ -50,6 +51,7 @@ function iniciarJuego(valor){
 
     ocultar(tarjeta2,"'animate__fast'")
     mostrar(pantallaPrincipal)  
+    recortarPalabra()
 
     }else{
         tituloInputPalabra.classList.add('animate__animated','animate__shakeX')
@@ -63,11 +65,29 @@ function iniciarJuego(valor){
 
      
 }
+//ACA ya tengo la palabra
+
+function recortarPalabra(){
+    arrPalabra = palabra.split('')
+
+    console.log(arrPalabra)
+    let arrayLength = arrPalabra.length;
+    let temp;
+        for (let i = 0; i < arrayLength; i++) {
+        temp = document.createElement('div');
+        temp.className = 'resultado';
+        temp.id = i
+        temp.innerHTML = arrPalabra[i];
+        document.getElementById('acertijo').appendChild(temp);
+    }
+}
 
 function enviarLetra(letra) {
-    console.log(letra)
-    
+        console.log(letra)
 }
+
+
+
 
 
 /* para dividir el string en un array
