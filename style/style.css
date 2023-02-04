@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
 
-body{
+
+    
+
+.pantallaPrincipal{
     background-image: url('../res/img/fondo2.jpg');
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+
 }
 
 .titulo{
-
+    position: relative;
     font-size: 3rem;
     display: flex;
     justify-content: center;
@@ -36,9 +44,41 @@ body{
     
 }
 
+.contInicio{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tarjeta{
+    position: relative;
+    width: 40vw;
+    height: 35vh;
+    background-color: rgb(243, 241, 241);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    box-shadow: 0 2px 25px rgba(89, 89, 89, 0.5);
+
+
+}
+
+.buttonGen{
+    padding: 0 20px;
+}
+
 @media only screen and (max-width: 720px) {
     .titulo{
         max-width: 100%;
         margin: 0 auto;
+    }
+    .tarjeta{
+        position: relative;
+        width: 280px;
+        height: 150px;
     }
   }
