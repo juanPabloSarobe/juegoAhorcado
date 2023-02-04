@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
+
+body{
+    background-image: url('../res/img/fondo2.jpg');
+    background-size: cover;
+}
+
+.titulo{
+
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: Nunito;
+    font-weight: 500;
+}
+.subtitulo{
+    font-size: x-small;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.ahorcado{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: red;
+
+    
+}
+
+@media only screen and (max-width: 720px) {
+    .titulo{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+  }
