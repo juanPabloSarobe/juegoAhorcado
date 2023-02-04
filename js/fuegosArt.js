@@ -90,5 +90,5 @@ else if (document.body.clientWidth) {
 swide=document.body.clientWidth;
 shigh=document.body.clientHeight;}}
 /* con el siguiente comanzo de ejecutan los fuegos artificiales */
-window.onclick =function() { if (document.getElementById) {
-set_width();write_fire();launch();setInterval('stepthrough()', speed);}}
+/* window.onclick =function() { if (document.getElementById) {
+set_width();write_fire();launch();setInterval('stepthrough()', speed);}} */
