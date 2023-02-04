@@ -4,6 +4,7 @@ const titulo1 = document.getElementById('titulo1')
 const leyenda = document.getElementById('leyenda')
 const pantallaPrincipal = document.getElementById('pantallaPrincipal')
 const tituloInputPalabra = document.getElementById('tituloInputPalabra')
+
 let palabra
 
 function ocultar(elemento) {
@@ -63,6 +64,10 @@ function iniciarJuego(valor){
      
 }
 
+function enviarLetra(letra) {
+    console.log(letra)
+    
+}
 
 
 /* para dividir el string en un array

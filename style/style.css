@@ -162,8 +162,9 @@ main{
     max-width: 65%;
 }
 .seccionLetras input{
-    margin: 1px 1px;
-    width: 45px;
+    margin: 2px 2px;
+    width: 50px;
+    
     
 }
 
