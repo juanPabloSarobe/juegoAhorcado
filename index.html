@@ -27,7 +27,7 @@
 
         </div>
 
-        <div   div id="tarjeta1" class="tarjeta animate__animated animate__bounceInUp animate__slow">
+        <div div id="tarjeta1" class="tarjeta animate__animated animate__bounceInUp animate__slow">
 
             <div class="buttonGen"><button type="button" onclick="prepararJuego()" class="btn btn-success w-100"
                     disabled>1 Jugador</button></div>
@@ -37,17 +37,40 @@
         </div>
         <div id="tarjeta2" class="tarjeta ocultar  ">
 
-                <div class="tituloInputPalabra">
-                    <p>Jugador 1, por favor ingrese su palabra a adivinar</p>
-                </div>
-                <div class="inputPalabra">
-                    <input type="password" name="palabra" id="palabra" class="pass" onkeyup="verificaLetra(this.value)">
-                    <button type="button" onclick="iniciarJuego()" class="btn btn-success w-10"> ></button>
-                    
-                </div>
-                <p id="leyenda" class="leyenda leyOff">*Atencion solo introducir letras</p>
+            <div id="tituloInputPalabra" class="tituloInputPalabra">
+                <p>Jugador 1, por favor ingrese su palabra a adivinar</p>
+            </div>
+            <div class="inputPalabra">
+                <input type="password" name="palabra" id="palabra" class="pass" onkeyup="verificaLetra(this.value)">
+                <button type="button" onclick="iniciarJuego(document.getElementById('palabra').value)"
+                    class="btn btn-success w-10"> ></button>
 
             </div>
+            <p id="leyenda" class="leyenda leyOff">*Atencion solo introducir letras</p>
+
+        </div>
+
+        <div id="pantallaPrincipal" class="pantallaPrincip  ocultar">
+            <div id="ahorcado" class="imgAhorcado">
+
+            </div>
+            <div class=" Acertijo">
+
+            </div>
+
+            <div class="seccionLetras">
+                <input type="button" value="A"><input type="button" value="B"><input type="button" value="C"><input
+                    type="button" value="D"><input type="button" value="E"><input type="button" value="F"><input
+                    type="button" value="G"><input type="button" value="H"><input type="button" value="I"><input
+                    type="button" value="J"><input type="button" value="K"><input type="button" value="L"><input
+                    type="button" value="M"><input type="button" value="N"><input type="button" value="Ñ"><input
+                    type="button" value="O"><input type="button" value="P"><input type="button" value="Q"><input
+                    type="button" value="R"><input type="button" value="S"><input type="button" value="T"><input
+                    type="button" value="U"><input type="button" value="V"><input type="button" value="W"><input
+                    type="button" value="X"><input type="button" value="Y"><input type="button" value="Z">
+
+            </div>
+        </div>
 
     </div>
     <script src="./js/scripts.js"></script>
