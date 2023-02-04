@@ -29,19 +29,23 @@
 
         <div   div id="tarjeta1" class="tarjeta animate__animated animate__bounceInUp animate__slow">
 
-            <div class="buttonGen"><button type="button" onclick="iniciarJuego()" class="btn btn-success w-100"
+            <div class="buttonGen"><button type="button" onclick="prepararJuego()" class="btn btn-success w-100"
                     disabled>1 Jugador</button></div>
-            <div class="buttonGen"><button type="button" onclick="iniciarJuego()" class="btn btn-danger w-100">2
+            <div class="buttonGen"><button type="button" onclick="prepararJuego()" class="btn btn-danger w-100">2
                     Jugadores</button></div>
 
         </div>
-        <div id="tarjeta2" class="tarjeta tarj2  ">
+        <div id="tarjeta2" class="tarjeta ocultar  ">
 
-                <div class="buttonGen"><button type="button" onclick="iniciarJuego()" class="btn btn-success w-100"
-                        disabled>1
-                        Jugador</button></div>
-                <div class="buttonGen"><button type="button" onclick="iniciarJuego()" class="btn btn-danger w-100">2
-                        Jugadores</button></div>
+                <div class="tituloInputPalabra">
+                    <p>Jugador 1, por favor ingrese su palabra a adivinar</p>
+                </div>
+                <div class="inputPalabra">
+                    <input type="password" name="palabra" id="palabra" class="pass" onkeyup="verificaLetra(this.value)">
+                    <button type="button" onclick="iniciarJuego()" class="btn btn-success w-10"> ></button>
+                    
+                </div>
+                <p id="leyenda" class="leyenda leyOff">*Atencion solo introducir letras</p>
 
             </div>
 
@@ -51,6 +55,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="./js/fuegosArt.js"></script>
+    <script src="./js/allLetters.js"></script>
     <!-- www.cssplantillas.es.tl -->
     <!-- //fuegos artificiales -->
     <!-- script type="text/javascript" src="https://dl.dropboxusercontent.com/s/qhmfmwu7ckig9l2/fartificiales.js"></script>

@@ -85,24 +85,52 @@ main{
 
 
 }
-.tarj2{
+.ocultar{
     display: none;
     
     
 }
 
+.tituloInputPalabra{
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
 
+.inputPalabra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.pass{
+    width: 75%;
+    border-radius: 5px;
+    border-width: 0.5px;
+}
+
+.leyenda{
+    color: red;
+    font-size: small;
+    margin-left: 15px;
+}
+.leyOff{
+    display: none;
+}
 .buttonGen{
     padding: 0 20px;
 }
 
 @media only screen and (max-width: 720px) {
+
+    .pantallaPrincipal{
+        background-size: contain ;
+    }
     .titulo{
         max-width: 100%;
         margin: 0 auto;
     }
     .tarjeta{
-        position: relative;
+       
         width: 280px;
         height: 150px;
     }
