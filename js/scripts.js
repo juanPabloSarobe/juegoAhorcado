@@ -14,6 +14,12 @@ const lista = 'Paraguas, Chaleco, Calendario, Posibilidad, Solicitud, Energia, C
 const arrPalabras = lista.split(', ')
 
 
+const {
+    host, hostname, href, origin, pathname, port, protocol, search
+  } = window.location
+
+  console.log('host: '+host +'  __  hostname: '+hostname+'  __  href: '+ href+'  __  origin: '+ origin +'  __  pathname: '+ pathname+'  __  port: '+ port+'  __  protocol: '+ protocol+'  __  search: '+ search)
+
 let palabra
 let arrPalabra = []
 let arrAdivinado = []
@@ -119,6 +125,7 @@ function enviarLetra(letra) {
         }else{
             
             vidas++
+            
             let direccion = "url('../res/img/a" + vidas+".webp')"
             ahorcado.style.backgroundImage = direccion
             ahorcado.classList.add('animate__animated','animate__fadeIn')
