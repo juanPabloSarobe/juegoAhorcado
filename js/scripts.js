@@ -10,6 +10,10 @@ const leyendaLoss = document.getElementById('leyendaLoss')
 const tarjetaLoss = document.getElementById('tarjetaLoss')
 const tarjetaWin = document.getElementById('tarjetaWin')
 
+const lista = 'Paraguas, Chaleco, Calendario, Posibilidad, Solicitud, Energia, Columpio, Arco, Ganso, Gorra, Tecnologia, Zoo, Politica, Letra, Robin, Procedimiento, Reflexion, Cadena, Sueter, Operacion, Vehiculo, Nudo, Circulo, Ayuda, Pensamiento tardio, Muñeca, Rifle, Medios, Gobernador, Aliento, Bebes, Pan, Ciervo, Cafe, Television, Pregunta, Piedra, Educacion, Abeja, Sillas, Fisica, Amistad, angulo, Altura, Manguera, Paquete, Pagina, Titulo, Sabana, Beisbol, Marmol, Realidad, Espia, Verano, Ensalada, Profesor, Crayon, Panqueque, Desempeño, Psicologia, Reflexion, Cuarzo, Casa, Cactus, Estrategia, Desayuno, Beso, Temperatura, Olas, Deseo, Bandera, Tema, Reconocimiento, Gatito, Abrigo, Reemplazo, Aguanieve, Ventana, Boton, Circulo, Fundacion, Retroalimentacion, Isla, Pintura, Prision, Rango, Tradicion, Hija, Musica, Sugerencia, Sesion, Mosca, Sal, Sombra, Lluvia, Oceano, Pelota, Carbon, Comportamiento, Ubicacion, Presencia, Gusano, Existencia, Manguera, Usuario, Disco, Sirviente, Ciervo, Creencia, Sociedad, Alcohol, Pez, Libros, Efecto, Pastel, Escritorio, Bandera, Forma, Ataque, Puente, Gorra, Pais, Lagartos, Baya, Atraccion, Velo, Ciudad, Pollo, Perdida, Sky, Madre, Respeto, Artesano, Inicio, Edificio, Sentido, Biblioteca, Conejo, Parque, Sol, Florero, Yo, Estrella, Peine, Rock, Pizza, Rana, Jabon, Aplicacion, Titulo, Escarabajo, Caballo, Parada, Bandeja, Camiones'
+const arrPalabras = lista.split(', ')
+
+
 let palabra
 let arrPalabra = []
 let arrAdivinado = []
@@ -50,10 +54,16 @@ function verificaLetra(valor) {
     
     
 }
-
+function onePlayer(){
+    const random = Math.floor(Math.random() * arrPalabras.length);
+    palabra = arrPalabras[random]
+    ocultar(titulo1)
+    ocultar(tarjeta1)
+    iniciarJuego(palabra)
+}
 
 function iniciarJuego(valor){
-    console.log(valor)
+
     if (valor != '' && valor != null) {
       palabra = valor.toUpperCase()
 
@@ -78,7 +88,7 @@ function iniciarJuego(valor){
 function recortarPalabra(){
     arrPalabra = palabra.split('')
 
-    console.log(arrPalabra)
+
     let arrayLength = arrPalabra.length;
     let temp;
         for (let i = 0; i < arrayLength; i++) {
@@ -120,6 +130,7 @@ function enviarLetra(letra) {
         }
             
         }
+        document.getElementById(letra).disabled = true
 
     }
     verificaResultado()

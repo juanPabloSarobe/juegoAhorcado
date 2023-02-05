@@ -29,10 +29,15 @@ main{
     align-items: center;
     max-width: 70%;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 100px;
     font-family: Nunito;
     font-weight: 500;
 }
+#tarjeta1 h4{
+    text-align: center;
+    margin: 0 10px;
+}
+
 .subtitulo{
     font-size: x-small;
     display: flex;

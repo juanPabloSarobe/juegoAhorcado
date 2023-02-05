@@ -21,16 +21,16 @@
             <h1> Juego del <span class="ahorcado"> a h o r c a d o</span> </h1>
             <div class="subtitulo">
                 <p style="visibility: hidden;"> p</p>
-                <p>by Isa y Juan Sarobe</p>
+                <p>by Isa y Juan Pablo</p>
             </div>
 
 
         </div>
 
         <div div id="tarjeta1" class="tarjeta animate__animated animate__bounceInUp animate__slow">
-
-            <div class="buttonGen"><button type="button" onclick="prepararJuego()" class="btn btn-success w-100"
-                    disabled>1 Jugador</button></div>
+            <h4>Bienvenido al juego del ahorcado, por favor seleccione para comenzar:</h4>
+            <div class="buttonGen"><button type="button" onclick="onePlayer()" class="btn btn-success w-100"
+                    >1 Jugador</button></div>
             <div class="buttonGen"><button type="button" onclick="prepararJuego()" class="btn btn-danger w-100">2
                     Jugadores</button></div>
 
@@ -60,20 +60,33 @@
             </div>
 
             <div id="seccionLetras" class="seccionLetras">
-                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="A">
-                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="B">
-                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="C">
-                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="D">
-                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="E">
-                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="F">
-                <input class="boton"onclick="enviarLetra(this.value)" type="button" value="G">
-                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="H"><input class="boton" onclick="enviarLetra(this.value)" type="button"value="I"><input
-                class="boton" onclick="enviarLetra(this.value)"  type="button" value="J"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="K"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="L"><input
-                class="boton" onclick="enviarLetra(this.value)"  type="button" value="M"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="N"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="Ñ"><input
-                class="boton" onclick="enviarLetra(this.value)"  type="button" value="O"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="P"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="Q"><input
-                class="boton" onclick="enviarLetra(this.value)"  type="button" value="R"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="S"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="T"><input
-                class="boton" onclick="enviarLetra(this.value)"  type="button" value="U"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="V"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="W"><input
-                class="boton" onclick="enviarLetra(this.value)"  type="button" value="X"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="Y"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="Z">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="A" id="A">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="B" id="B">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="C"id="C">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="D"id="D">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="E"id="E">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="F"id="F">
+                <input class="boton"onclick="enviarLetra(this.value)" type="button" value="G"id="G">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="H"id="H">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button"value="I"id="I">
+                <input class="boton" onclick="enviarLetra(this.value)"  type="button" value="J"id="J">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="K"id="K">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="L"id="L">
+                <input class="boton" onclick="enviarLetra(this.value)"  type="button" value="M"id="M">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="N"id="N">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="Ñ"id="Ñ">
+                <input class="boton" onclick="enviarLetra(this.value)"  type="button" value="O"id="O">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="P"id="P">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="Q"id="Q">
+                <input class="boton" onclick="enviarLetra(this.value)"  type="button" value="R"id="R">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="S"id="S">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="T"id="T">
+                <input class="boton" onclick="enviarLetra(this.value)"  type="button" value="U"id="U">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="V"id="V">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="W"id="W">
+                <input class="boton" onclick="enviarLetra(this.value)"  type="button" value="X"id="X">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="Y"id="Y">
+                <input class="boton" onclick="enviarLetra(this.value)" type="button" value="Z"id="Z">
 
             </div>
         </div>
