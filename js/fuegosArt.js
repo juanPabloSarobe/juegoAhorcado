@@ -92,3 +92,8 @@ shigh=document.body.clientHeight;}}
 /* con el siguiente comanzo de ejecutan los fuegos artificiales */
 /* window.onclick =function() { if (document.getElementById) {
 set_width();write_fire();launch();setInterval('stepthrough()', speed);}} */
+
+function disparaFuegos() {
+    if (document.getElementById) {
+        set_width();write_fire();launch();setInterval('stepthrough()', speed);}    
+}

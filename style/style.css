@@ -90,13 +90,18 @@ main{
     
     
 }
+.esconder{
+    visibility: hidden ;
+}
 
 .tituloInputPalabra{
     text-align: center;
     display: inline-block;
     margin: 0 auto;
 }
-
+.tituloInputPalabra p{
+    margin:  15px;
+}
 .inputPalabra{
     display: flex;
     flex-direction: row;
@@ -140,25 +145,26 @@ main{
 }
 
 .imgAhorcado{
-    width: 300px;
+    width: 277px;
     height: 400px;
-    background-color: brown;
     margin-top: 25px;
-    background-image: url('../res/img/a8.webp');
-    background-size: cover;
+    background-image: url('../res/img/a0.webp');
+    background-size: contain;
 
 }
 .Acertijo{
     width: 300px;
     height: 50px;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
+    font-size: 2rem;
 
 }
 .resultado{
     margin: 0 10px;
+
 }
 
 .seccionLetras{
@@ -188,11 +194,11 @@ main{
     }
     .tarjeta{
        
-        width: 280px;
-        height: 150px;
+        width: 300px;
+        height: 250px;
     }
     .imgAhorcado{
-        width: 250px;
+        width: 240px;
         height: 350px;
     }
     .Acertijo{

@@ -4,9 +4,17 @@ const titulo1 = document.getElementById('titulo1')
 const leyenda = document.getElementById('leyenda')
 const pantallaPrincipal = document.getElementById('pantallaPrincipal')
 const tituloInputPalabra = document.getElementById('tituloInputPalabra')
+const ahorcado = document.getElementById('ahorcado')
+const seccionLetras = document.getElementById('seccionLetras')
+const leyendaLoss = document.getElementById('leyendaLoss')
+const tarjetaLoss = document.getElementById('tarjetaLoss')
+const tarjetaWin = document.getElementById('tarjetaWin')
 
 let palabra
 let arrPalabra = []
+let arrAdivinado = []
+let adivinado
+let vidas = 0
 
 function ocultar(elemento) {
     elemento.classList.remove('animate__bounceInUp','animate__delay-2s')
@@ -77,18 +85,72 @@ function recortarPalabra(){
         temp = document.createElement('div');
         temp.className = 'resultado';
         temp.id = i
-        temp.innerHTML = arrPalabra[i];
+        temp.innerHTML = '_';
         document.getElementById('acertijo').appendChild(temp);
     }
 }
 
 function enviarLetra(letra) {
-        console.log(letra)
+        
+    if (letra != '' && letra != null) {
+        
+        if (arrPalabra.includes(letra)) {
+            arrAdivinado = []
+            for (let i = 0; i < arrPalabra.length; i++) {
+                
+                if (arrPalabra[i] == letra) {
+                    document.getElementById(i).innerHTML = letra
+                }
+                arrAdivinado.push(document.getElementById(i).innerHTML)
+            }
+            adivinado = arrAdivinado.join('')
+            
+            
+        }else{
+            
+            vidas++
+            let direccion = "url('../res/img/a" + vidas+".webp')"
+            ahorcado.style.backgroundImage = direccion
+            ahorcado.classList.add('animate__animated','animate__fadeIn')
+            
+            const myTimeout = setTimeout(timmerBorraFadeIn, 1500);
+
+            function timmerBorraFadeIn() {
+            ahorcado.classList.remove('animate__animated','animate__fadeIn')
+        }
+            
+        }
+
+    }
+    verificaResultado()
 }
 
+function verificaResultado() {
+    if (adivinado === palabra) {
+        disparaFuegos()
+        esconderTeclado()
+        win()
+    }else if ( vidas === 8){
+       esconderTeclado()
+        leyendaLoss.innerHTML = 'La palabra era: ' + palabra
+        loss()
+    }
+    
+}
 
+function esconderTeclado(){
+    seccionLetras.classList.add ('esconder')
+}
+function win() {
+    mostrar(tarjetaWin)
+}
 
-
+function loss() {
+    mostrar(tarjetaLoss)
+}
+function reiniciar() {
+    location.reload()
+}
 
 /* para dividir el string en un array
 const str = 'book';

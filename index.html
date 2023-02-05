@@ -38,7 +38,8 @@
         <div id="tarjeta2" class="tarjeta ocultar  ">
 
             <div id="tituloInputPalabra" class="tituloInputPalabra">
-                <p>Jugador 1, por favor ingrese su palabra a adivinar</p>
+                <p>Jugador 1, por favor ingrese su palabra a adivinar.</p>
+                <p>El Jugador 2 no debe mirar la pantalla.</p>
             </div>
             <div class="inputPalabra">
                 <input type="password" name="palabra" id="palabra" class="pass" onkeyup="verificaLetra(this.value)">
@@ -58,7 +59,7 @@
 
             </div>
 
-            <div class="seccionLetras">
+            <div id="seccionLetras" class="seccionLetras">
                 <input class="boton" onclick="enviarLetra(this.value)" type="button" value="A">
                 <input class="boton" onclick="enviarLetra(this.value)" type="button"value="B">
                 <input class="boton" onclick="enviarLetra(this.value)" type="button"value="C">
@@ -75,6 +76,30 @@
                 class="boton" onclick="enviarLetra(this.value)"  type="button" value="X"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="Y"><input class="boton" onclick="enviarLetra(this.value)" type="button" value="Z">
 
             </div>
+        </div>
+
+        <div id="tarjetaWin" class="tarjeta  ocultar ">
+
+            <div id="tituloInputPalabra" class="tituloInputPalabra ">
+                <h2>FELICITACIONES GANASTE!!!</h2>
+                <p id="creditos" class=" ">Diseño: Isabella Sarobe <br> Programación: Juan Pablo Sarobe</p>
+                <div class="buttonGen"><button type="button" onclick="reiniciar()" class="btn btn-success w-100">Jugar de nuevo</button></div>
+            </div>
+
+            
+        </div>
+
+
+        <div id="tarjetaLoss" class="tarjeta  ocultar ">
+
+            <div id="tituloInputPalabra" class="tituloInputPalabra ">
+                <h2>ALPISTE PERDISTE!!!</h2>
+                <h3 id="leyendaLoss"></h3>
+                <p id="creditos" class=" ">Diseño: Isabella Sarobe <br> Programación: Juan Pablo Sarobe</p>
+                <div class="buttonGen"><button type="button" onclick="reiniciar()" class="btn btn-success w-100">Jugar de nuevo</button></div>
+            </div>
+
+            
         </div>
 
     </div>
