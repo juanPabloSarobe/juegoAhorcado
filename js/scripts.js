@@ -13,13 +13,6 @@ const tarjetaWin = document.getElementById('tarjetaWin')
 const lista = 'Paraguas, Chaleco, Calendario, Posibilidad, Solicitud, Energia, Columpio, Arco, Ganso, Gorra, Tecnologia, Zoo, Politica, Letra, Robin, Procedimiento, Reflexion, Cadena, Sueter, Operacion, Vehiculo, Nudo, Circulo, Ayuda, Pensamiento tardio, Muñeca, Rifle, Medios, Gobernador, Aliento, Bebes, Pan, Ciervo, Cafe, Television, Pregunta, Piedra, Educacion, Abeja, Sillas, Fisica, Amistad, angulo, Altura, Manguera, Paquete, Pagina, Titulo, Sabana, Beisbol, Marmol, Realidad, Espia, Verano, Ensalada, Profesor, Crayon, Panqueque, Desempeño, Psicologia, Reflexion, Cuarzo, Casa, Cactus, Estrategia, Desayuno, Beso, Temperatura, Olas, Deseo, Bandera, Tema, Reconocimiento, Gatito, Abrigo, Reemplazo, Aguanieve, Ventana, Boton, Circulo, Fundacion, Retroalimentacion, Isla, Pintura, Prision, Rango, Tradicion, Hija, Musica, Sugerencia, Sesion, Mosca, Sal, Sombra, Lluvia, Oceano, Pelota, Carbon, Comportamiento, Ubicacion, Presencia, Gusano, Existencia, Manguera, Usuario, Disco, Sirviente, Ciervo, Creencia, Sociedad, Alcohol, Pez, Libros, Efecto, Pastel, Escritorio, Bandera, Forma, Ataque, Puente, Gorra, Pais, Lagartos, Baya, Atraccion, Velo, Ciudad, Pollo, Perdida, Sky, Madre, Respeto, Artesano, Inicio, Edificio, Sentido, Biblioteca, Conejo, Parque, Sol, Florero, Yo, Estrella, Peine, Rock, Pizza, Rana, Jabon, Aplicacion, Titulo, Escarabajo, Caballo, Parada, Bandeja, Camiones'
 const arrPalabras = lista.split(', ')
 
-
-const {
-    host, hostname, href, origin, pathname, port, protocol, search
-  } = window.location
-
-  console.log('host: '+host +'  __  hostname: '+hostname+'  __  href: '+ href+'  __  origin: '+ origin +'  __  pathname: '+ pathname+'  __  port: '+ port+'  __  protocol: '+ protocol+'  __  search: '+ search)
-
 let palabra
 let arrPalabra = []
 let arrAdivinado = []
