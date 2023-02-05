@@ -126,7 +126,7 @@ function enviarLetra(letra) {
             
             vidas++
             
-            let direccion = "url('../res/img/a" + vidas+".webp')"
+            let direccion = "url('./res/img/a" + vidas+".webp')"
             ahorcado.style.backgroundImage = direccion
             ahorcado.classList.add('animate__animated','animate__fadeIn')
             
