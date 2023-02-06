@@ -96,6 +96,10 @@ function recortarPalabra(){
         temp.id = i
         temp.innerHTML = '_';
         document.getElementById('acertijo').appendChild(temp);
+    
+            if (arrayLength > 6){
+                document.getElementById(i).style.margin = '0 3px'
+            }
     }
 }
 
